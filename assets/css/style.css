@@ -1,14 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:100,200,300,400,500,600,700|Montserrat:100,200,300,400,500,600,700|Montserrat:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Noto+Sans+JP:100,200,300,400,500,600,700');
+
 
 /*Home Pg--------------------------------------------Nav*/
 
+/*--------------------------------------------Aside Wrapper for menu items Code attribution css-tricks.com [(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)]*/
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 0px;
+  flex: 1 100%;
+}
+
+.header {
+  background:  rgba(103, 128, 159, .2);
+}
+
+.footer {
+  background: none;
+}
+
+.main {
+  text-align: center;
+  background: none;
+  height: 60px;
+}
+
+img {
+    max-width:100%; 
+    height:60px;
+    margin: 0;
+    padding: 0;
+}
+
+.aside-1, .aside-2, .aside-3, .aside-4 {
+  background: none;
+  height: 60px;
+}
+
+@media all and (min-width: 34em) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 62em) {
+  .main    { flex: 3 0px; }
+  .main    { order: 1; }
+  .aside-1 { order: 2; } 
+  .aside-2 { order: 3; }
+  .aside-3 { order: 4; }
+  .aside-4 { order: 5; }
+  .footer  { order: 6; }
+}
+
+.aside {
+    height: 60px;
+    list-style-type: none;
+    margin:0;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.aside li a:hover {
+    color:#777777;
+    text-decoration:none;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.aside a {
+     font-size: 0.9rem;
+     letter-spacing: 1px;
+     color: #777777;
+     font-weight: 600;
+ }  
 
 /*--------------------------------------------Navbar https://azmind.com/demo/bootstrap-hamburger-menu/* /
 
 /***** Top menu *****/
  
 .navbar {
-    background: rgba(28,151,194,.5);
+    color:rgba(0,176,240);
     transition: all .6s;
     backface-visibility: hidden;
     box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
@@ -79,11 +161,10 @@
 }
  
 .navbar-brand {
-    width: 162px;
-    height: 44px;
-    background: url(../img/logo.png) left center no-repeat;
+    width: 100%;
+    height: auto;
+    background: url(../logo/primark-logo.PNG) left center no-repeat;
     border: 0;
-    text-indent: -99999px;
 }
 
 /*attribution shutterstock*/
@@ -102,7 +183,7 @@
 /*--------------------------------------------Body*/
 
 body {
-    font-family: "Karla", "Montserrat";
+    font-family: "Roboto", "Noto Sans JP";
     margin: 0;
     padding: 0;
 }
@@ -125,3 +206,223 @@ hr {
     border:0;
     align-self: center;
 }
+
+/*Footer--------------------------------------------Sign up newsletter*/
+
+form {
+    display: inline;
+    text-align: center;
+}
+
+#stay-strong {
+    color: #777777;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+#call-to-action {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #777777;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+/*--------------------------------------------Top-Footer hyperlinks & social media*/
+
+@media all and (min-width: 34em) {
+  .top-footer-aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 62em) {
+  .main    { flex: 3 0px; }
+  .main    { order: 1; }
+  .top-footer-aside-1 { order: 2; } 
+  .top-footer-aside-2 { order: 3; }
+  .top-footer-aside-3 { order: 4; }
+  .footer-aside-4 { order: 5; }
+  .top-footer  { order: 6; }
+}
+
+.top-footer-aside-1, .top-footer-aside-2, .top-footer-aside-3, .top-footer-aside-4 {
+  height: 5px;
+}
+
+.top-footer-aside {
+    height: 20px;
+    color: #777777;
+    align-items: center;
+    list-style-type: none;
+    margin:0;
+    text-transform:none;
+    margin-top: 10px;
+}
+
+ .top-footer-aside a {
+     color: #777777;
+     text-decoration: none;
+     font-size: 0.8rem;
+     font-weight: 400;
+ } 
+
+.top-footer-aside a:hover {
+     color:black;
+}
+
+.social-media i:hover {
+     color: black;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+}
+
+.social-media li {
+    display: inline;
+    padding:1%;
+}
+
+.social-media i {
+    font-size: 140%;
+    margin: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #777777;
+}
+
+/*--------------------------------------------Btm-Footer copyright/logo/spotify*/
+
+#footerlogo {
+    height: 2em;
+    width: 6em;
+    background: url(../logo/mighty-masks-footer-logo.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btm-footer-aside-1 {
+  height: 5px;
+  margin-top: 1px;
+}
+
+.btm-footer-aside-2 {
+  height: 5px;
+  margin-top: 1px;
+}
+
+.btm-footer-aside-3 {
+  height: 5px;
+  margin-top: 1px;
+}
+
+@media all and (min-width: 34em) {
+  .btm-footer-aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 62em) {
+  .main    { flex: 3 0px; }
+  .btm-footer-aside-1 { order: 1; } 
+  .btm-footer-aside-2 { order: 2; }
+  .btm-footer-aside-3 { order: 4; }
+  .btm-footer  { order: 6; }
+}
+
+.btm-footer-aside {
+     margin-top: 5em;
+     color: #999999;
+     text-decoration: none;
+     font-size: 0.8rem;
+     font-weight: 400;
+     list-style-type: none;
+}
+
+ .btm-footer-aside a {
+     text-decoration: none;
+     font-size: 0.8rem;
+     font-weight: 400;
+     list-style-type: none;
+ }
+
+a {
+    color: #999999;
+}
+
+a:hover {
+    color: #999999;
+}
+
+h6 {
+    color: #ffffff00;
+}
+
+b {
+    font-size: 300%;
+}
+
+.b2 {
+    font-size: 180%;
+}
+
+
+iframe {
+    width:100%;
+    height:30em;
+}
+
+
+/*attribution shopify*/
+#shopify {
+    height: 0.9em;
+    width: 14em;
+    background: url(../logo/shopify.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*About Pg--------------------------------------------*/
+#hero-image-about {
+    height: 30em;
+    width: 100%;
+    background: url(../images/mangopear-creative-BK90Fa7Ujps-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*CityWeather Pg--------------------------------------------*/
+#hero-image-cityweather {
+    height: 30em;
+    width: 100%;
+    background: url(../images/ethan-hu-gP2PNn1fCiU-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Media Pg--------------------------------------------*/
+#hero-image-media {
+    height: 50em;
+    width: 100%;
+    background: url(../images/hosein-emrani-r_cZgqq0WHE-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*Store Locator Pg--------------------------------------------*/
+#hero-image-storelocator {
+    height: 30em;
+    width: 100%;
+    background: url(../images/110551_N36-1200x667.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: bottom;
+}
+
