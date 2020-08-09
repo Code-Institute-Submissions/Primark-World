@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Noto+Sans+JP:100,200,300,400,500,600,700');
 
-
 /*Home Pg--------------------------------------------Nav*/
+
+.site-wide-alert {
+    height:35px !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-family: "Roboto" !important;
+    font-size: 90% !important;
+}
+
+/*Animated Burger/Menu Icon by Nicholas M. Smith https://www.hongkiat.com/blog/hamburger-menu-animations/*
+Try to add to home menu
+
+
 
 /*--------------------------------------------Aside Wrapper for menu items Code attribution css-tricks.com [(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)]*/
 
@@ -70,7 +84,7 @@ img {
 }
 
 .aside li a:hover {
-    color:#777777;
+    color:#fff;
     text-decoration:none;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -81,91 +95,19 @@ img {
 .aside a {
      font-size: 0.9rem;
      letter-spacing: 1px;
-     color: #777777;
+     color: #fff;
      font-weight: 600;
  }  
 
-/*--------------------------------------------Navbar https://azmind.com/demo/bootstrap-hamburger-menu/* /
+.city-container .box2 {
+    background: #fff;  
+}
 
-/***** Top menu *****/
- 
-.navbar {
-    color:rgba(0,176,240);
-    transition: all .6s;
-    backface-visibility: hidden;
-    box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
+.city-container .box3 {
+    background: rgba(204,229,255);
 }
- 
-.navbar-dark .navbar-nav {
-    font-size: 15px;
-    color: #fff;
-    text-transform: uppercase;
-}
- 
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    color: rgba(255, 255, 255, 0.8);
-    border: 0;
-}
- 
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #fff;
-}
- 
-.navbar-dark .navbar-nav .nav-link:focus {
-    color: #fff;
-    outline: 0;
-}
- 
-.navbar-dark .navbar-toggler {
-    border-color: #444;
-}
- 
-.navbar-dark .navbar-toggler:focus {
-    background: none;
-    outline: 0;
-}
- 
-.navbar-dark .navbar-toggler span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    margin: 6px auto;
-    background: #fff;
-    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
-}
- 
-.navbar-dark .navbar-toggler:hover span,
-.navbar-dark .navbar-toggler:focus span {
-    background: #ccc;
-}
- 
-/* rotate first span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
-    transform: rotate(45deg) translate(6px, 6px);
-}
- 
-/* hide second span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
-    opacity: 0;
-}
- 
-/* rotate third span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
- 
-.navbar-dark .navbar-toggler[aria-expanded="false"] span {
-    transform: none;
-    opacity: 1;
-}
- 
-.navbar-brand {
-    width: 100%;
-    height: auto;
-    background: url(../logo/primark-logo.PNG) left center no-repeat;
-    border: 0;
-}
+
+/*--------------------------------------------Navbar https://azmind.com/demo/bootstrap-hamburger-menu/* /
 
 /*attribution shutterstock*/
 #hero-image {
@@ -196,7 +138,7 @@ hr {
     margin-top: 25px;
     margin-bottom: 25px;
     border-width: 1px;
-    border-color: #777777;
+    border-color: #fff;
     border-style:double;
 }
 
@@ -214,15 +156,9 @@ form {
     text-align: center;
 }
 
-#stay-strong {
-    color: #777777;
-    font-size: 100%;
-    font-weight: 400;
-}
-
 #call-to-action {
     font-family: 'Noto Sans JP', sans-serif;
-    color: #777777;
+    color: #fff;
     font-size: 90%;
     font-weight: 500;
 }
@@ -249,7 +185,7 @@ form {
 
 .top-footer-aside {
     height: 20px;
-    color: #777777;
+    color: #fff;
     align-items: center;
     list-style-type: none;
     margin:0;
@@ -258,18 +194,18 @@ form {
 }
 
  .top-footer-aside a {
-     color: #777777;
+     color: #fff;
      text-decoration: none;
      font-size: 0.8rem;
      font-weight: 400;
  } 
 
 .top-footer-aside a:hover {
-     color:black;
+     color:lightgray;
 }
 
 .social-media i:hover {
-     color: black;
+     color: lightgray;
      transition: all 0.35s ease-in-out;
      -moz-transition: all 0.35s ease-in-out;
      -webkit-transition: all 0.35s ease-in-out;
@@ -286,15 +222,15 @@ form {
     margin: 1%;
     padding-top: 2%;
     padding-bottom: 2%;
-    color: #777777;
+    color: #fff;
 }
 
 /*--------------------------------------------Btm-Footer copyright/logo/spotify*/
 
 #footerlogo {
     height: 2em;
-    width: 6em;
-    background: url(../logo/mighty-masks-footer-logo.png);
+    width: 8em;
+    background: url(../logo/primark-logo-3.PNG);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -334,7 +270,7 @@ form {
 
 .btm-footer-aside {
      margin-top: 5em;
-     color: #999999;
+     color: #fff;
      text-decoration: none;
      font-size: 0.8rem;
      font-weight: 400;
@@ -349,15 +285,15 @@ form {
  }
 
 a {
-    color: #999999;
+    color: #fff;
 }
 
 a:hover {
-    color: #999999;
+    color: #fff;
 }
 
 h6 {
-    color: #ffffff00;
+    color: #fff;
 }
 
 b {
@@ -374,22 +310,6 @@ iframe {
     height:30em;
 }
 
-
-/*attribution shopify*/
-#shopify {
-    height: 0.9em;
-    width: 14em;
-    background: url(../logo/shopify.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /*About Pg--------------------------------------------*/
 #hero-image-about {
     height: 30em;
@@ -400,13 +320,52 @@ iframe {
 }
 
 /*CityWeather Pg--------------------------------------------*/
-#hero-image-cityweather {
+#hero-image-city {
     height: 30em;
     width: 100%;
     background: url(../images/ethan-hu-gP2PNn1fCiU-unsplash.jpg) no-repeat center center;
     background-size: cover;
     background-position: center;
 }
+
+img {
+    max-width:100%; 
+    height:60px;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------Code attribution Kristen Spencer Flex Box [(https://codepen.io/kristencodes/pen/BopVyB)] */
+
+@media screen and (max-width: 546px) {
+  .city-container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.city-container{
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box{
+  flex: 1 0 calc(33% - 10px);
+}
+
+.box:after{
+  content: '';
+  display: block;
+}
+
+.city-container .box:after{
+  content: '';
+  display: block;
+}
+
 
 /*Media Pg--------------------------------------------*/
 #hero-image-media {
@@ -418,7 +377,7 @@ iframe {
 }
 
 /*Store Locator Pg--------------------------------------------*/
-#hero-image-storelocator {
+#hero-image-store {
     height: 30em;
     width: 100%;
     background: url(../images/110551_N36-1200x667.jpg) no-repeat center center;
@@ -426,3 +385,6 @@ iframe {
     background-position: bottom;
 }
 
+body {
+background: rgba(80,152,192);
+}
