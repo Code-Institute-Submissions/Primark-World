@@ -34,3 +34,10 @@ countries.forEach(function(item){
     li.appendChild(txt);
     ul.appendChild(li);
 });
+
+primark.forEach(function(item){
+    let li = document.createElement('li');
+    let txt = document.createTextNode(item);
+    li.appendChild(txt);
+    ul.appendChild(li);
+});
