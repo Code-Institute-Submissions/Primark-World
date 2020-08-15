@@ -1,32 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <title>Document</title>
-    <style>
-    .some{
-        background-color: red;
-    }
-    .other{
-        background-color: azure;
-    }
+<html>
+  <head>
+    <title>Marker Animations With setTimeout()</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMp-BmFU6ImQLQp798O8uu9cx7Zd69xTg&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: "Roboto", "sans-serif";
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #floating-panel {
+        margin-left: -52px;
+      }
     </style>
-</head>
-<body>
-    <div><h1>Hello Primark World !</h1></div>
-    <main role="main" class="main">
-        <h3>Loading Scripts</h3>
-    <p class="some"></p>
-    <p class="other"></p>
-    <footer role="contentinfo" id="foot">
-        <p class="other">&copy; 2020</p>
-    </footer>
-    <script src="assets/js/countries.js" async></script>
-    <script src="assets/js/dom.js" async></script>
-    <script src="assets/js/my_script.js" async></script>
-    </main>
-</body>
+    <script>
+      "use strict";
+
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+      const neighborhoods = [
+        {//1  MARY STREET
+          lat: 53.348,
+          lng: -6.260
+        },
+        {//2  CARLOW
+          lat: 52.835,
+          lng: -6.927
+        },
+        {//3  DUN LAOGHAIRE
+          lat: 53.299,
+          lng: -6.182
+        },
+        {//4  NAVAN
+          lat: 53.654,
+          lng: -6.688
+        },
+        {//5  MULLINGAR
+          lat: 52.337,
+          lng: -6.461
+        },
+        {//6  WEXFORD
+          lat: 53.525,
+          lng: -7.350
+        },
+        {//7  PORTLAOISE
+          lat: 53.031,
+          lng: -7.297   
+        },
+        {//8  NUTGROVE
+          lat: 53.290,
+          lng: -6.268
+        },
+        {//9  ENNIS
+          lat: 53.299,
+          lng: -6.182
+        },
+        {//10  LIMERICK-DOORADOYLE
+          lat: 52.853,
+          lng: -8.984
+        },
+        {//11  SLIGO
+          lat: 54.271,
+          lng: -8.476
+        },
+        {//12  LETTERKENNY
+          lat: 54.946,
+          lng: -7.705
+        },
+        {//13  GALWAY - HEADFORD RD
+          lat: 53.277,
+          lng: -9.051   
+        },
+        {//14  KILKENNY
+          lat: 52.653,
+          lng: -7.254
+        },
+        {//15  LIMERICK-OCONNELL ST
+          lat: 52.664,
+          lng: -8.627
+        },
+        {//16  SANTRY
+          lat: 53.392,
+          lng: -6.248
+        },
+        {//17  ARTANE
+          lat: 53.383,
+          lng: -6.215
+        },
+        {//18  DROGHEDA
+          lat: 53.715,
+          lng: -6.351
+        },
+        {//19  NEWBRIDGE
+          lat: 52.933,
+          lng: -6.710   
+        },
+        {//20  WATERFORD
+          lat: 52.261,
+          lng: -7.112  
+        },
+        {//21  GALWAY - EYRE SQ
+            lat: 53.275,
+            lng: -9.051
+        },
+        {//22  TRALEE
+          lat: 52.954,
+          lng: -7.798
+        },
+        {//23  LONGFORD
+          lat: 53.729,
+          lng: -7.799
+        },
+        {//24  CASTLEBAR
+
+          lat: 54.273,
+          lng: -8.478
+        },
+        {//25  CORK - PATRICK ST
+
+          lat: 51.899,
+          lng: -8.471
+        },
+        {//26  O'CONNELL STREET
+          lat: 53.349,
+          lng: -6.260   
+        },
+        {//27  CLONMEL
+
+          lat: 52.353,
+          lng: -7.703  
+        },
+        {//28  ATHLONE
+          lat: 53.420,
+          lng: -7.934
+        },
+        {//29  BLANCHARDSTOWN
+          lat: 53.393,
+          lng: -6.390
+        },
+        {//30  SWORDS
+          lat: 53.471,
+          lng: -6.230
+        },
+        {//31  DUNDRUM
+          lat: 53.287,
+          lng: -6.242
+        },
+        {//32  DUNDALK MARSHES
+          lat: 54.001,
+          lng: -6.399
+        },
+        {//33  BALLINA
+          lat: 54.114,
+          lng: -9.154   
+        },
+        {//34  CORK - WILTON
+          lat: 51.881,
+          lng: -8.508
+        },
+        {//35  KILLARNEY
+          lat: 52.060,
+          lng: -9.510
+        },
+        {//36  LIFFEY VALLEY
+          lat: 53.353,
+          lng: -6.391
+        },
+        {
+          lat: 27.031,
+          lng: -17.297   
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        },
+        {
+          lat: 27.031,
+          lng: -17.297 
+        }
+      ];
+      let markers = [];
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8,
+          center: {
+            lat: 53.3488,
+            lng: -6.2609
+          }
+        });
+      }
+
+      function drop() {
+        clearMarkers();
+
+        for (let i = 0; i < neighborhoods.length; i++) {
+          addMarkerWithTimeout(neighborhoods[i], i * 25);
+        }
+      }
+
+      function addMarkerWithTimeout(position, timeout) {
+        window.setTimeout(() => {
+          markers.push(
+            new google.maps.Marker({
+              position: position,
+              map,
+              animation: google.maps.Animation.DROP
+            })
+          );
+        }, timeout);
+      }
+
+      function clearMarkers() {
+        for (let i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+
+        markers = [];
+      }
+    </script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <button id="drop" onclick="drop()">Drop Markers</button>
+    </div>
+    <div id="map"></div>
+  </body>
 </html>
