@@ -79,21 +79,10 @@
       }
 
       #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto', 'sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
-
-      #floating-panel {
-        margin-left: -52px;
+        padding: 10px;
+        line-height: 35px;
+        font-family: 'Roboto';
+        font-size: 18px;
       }
     </style>
     <script>
@@ -107,9 +96,8 @@
         //IRELAND
         {
           //1  MARY STREET
-          lat: 53.348,
-          lng: -6.26,
-          content: '<h1>Mary Street</h1>'
+          lat: 53.349019,
+          lng: -6.266548,
         },
         {
           //2  CARLOW
@@ -1528,13 +1516,13 @@
       }
 
       const contentString = `<div id="content">  <div id="siteNotice"></div>
-    <h1 id="firstHeading" class="firstHeading">Uluru</h1>
+    <h2 id="firstHeading" class="firstHeading">Primark / Penneys</h2>
     <div id="bodyContent">
-    <p><b>Marker heading goes here</b> Please pass in info here </p>
-    <p>Attribution: Uluru, <img src="https://specials-images.forbesimg.com/imageserve/1179891725/960x0.jpg?fit=scale">
-    (last visited June 22, 2009).</p>
+    <p>Founded 1969 in Dublin, trading in 12 countries</p>
+    <img src="/assets/images/stores/topglass/structural_glass_by_topglass_pennys_dublin.jpg">
     </div>
     </div>`
+
 
       function loadMarkers(items, icon) {
         let features = items.map(d => ({
@@ -1562,9 +1550,9 @@
       function loadImages() {
         clearMarkers()
         const iconBase = './assets/images/icons' //'../assets/images/icons'
-        const depotImage = `${iconBase}/depot.png`
-        const hqImage = `${iconBase}/primark-towers.png`
-        const storesImage = `${iconBase}/primark-circle.png`
+        const depotImage = `${iconBase}/small-depot.png`
+        const hqImage = `${iconBase}/large-hq.png`
+        const storesImage = `${iconBase}/store.png`
         const storeMarkers = loadMarkers(stores, storesImage)
         const depotMarkers = loadMarkers(depots, depotImage)
         const hqMarkers = loadMarkers(hq, hqImage)
@@ -1611,8 +1599,10 @@
   <body>
     <div id="floating-panel">
       <button id="drop" onclick="loadImages()">Find Primark stores</button>
+      <button type="reset" onclick="document.location.reload()">RESET</button>
     </div>
     <div id="map"></div>
+    <script src="assets/js/reset.js" async></script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCMp-BmFU6ImQLQp798O8uu9cx7Zd69xTg&center=47.6497687174687,-122.46803435860201&zoom=11&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x242f3e&style=element:labels.text.fill%7Ccolor:0x746855&style=element:labels.text.stroke%7Ccolor:0x242f3e&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi.park%7Celement:geometry%7Ccolor:0x263c3f&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x6b9a76&style=feature:road%7Celement:geometry%7Ccolor:0x38414e&style=feature:road%7Celement:geometry.stroke%7Ccolor:0x212a37&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x9ca5b3&style=feature:road.highway%7Celement:geometry%7Ccolor:0x746855&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x1f2835&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xf3d19c&style=feature:transit%7Celement:geometry%7Ccolor:0x2f3948&style=feature:transit.station%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:water%7Celement:geometry%7Ccolor:0x17263c&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x515c6d&style=feature:water%7Celement:labels.text.stroke%7Ccolor:0x17263c&size=480x360"
