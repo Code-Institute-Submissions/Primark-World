@@ -1,104 +1,1612 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <title>Primark World</title>
-</head>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>Marker Animations With setTimeout()</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMp-BmFU6ImQLQp798O8uu9cx7Zd69xTg&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
 
-<header>
-    <nav class="navalert">
+    <header>
+      <nav class="navalert">
         <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="site-wide-alert alert alert-primary text-center">
-                    <strong>Welcome to Primark World</strong> Life is Good
-                </div>
+          <div class="col-12">
+            <div class="site-wide-alert alert alert-primary text-center">
+              <strong>Welcome to Primark World</strong> Life is Good
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
-<body>
- 
-        <div class="container fluid">
-            <div class="wrapper">
-                <article class="main">
-                    <div class="logo">
-                    <a href="index.html"><img src="assets/logo/primark-logo-3.PNG" alt="logo"></a>
-                    </div>
-                </article>
-                <aside class="aside aside-1"><a href="about.html">About</a></aside>
-                <aside class="aside aside-2"><a href="city.html">City</a></aside>
-                <aside class="aside aside-3"><a href="store.html">Store</a></aside>
-                <aside class="aside aside-4"><a href="media.html">Media</a></aside>
-            </div>
-        </div>
-</body>
-
-
-
-<br>
-<div class="container fluid">
-    <div class="row">
-        <div class="col" id="hero-image-store" title="primark-edinburgh">
-        </div> 
-    </div>
-</div>
-</header>
-
-<br>
-
-<body>
-
-<br>
-<div class="text-center">
-Hello
-</div>
-<br>
-
-</body>
-
-    <footer class="footer">
-        <form>
-            <div class="row">
-                <div class="col"></div>
-                <div class="form-group col-md-3" id="call-to-action">
-                    <label for="emailaddress">Sign Up to Our Newsletter
-                    <input id="emailaddress" type="email" class="form-control text-center" required placeholder="name@example.com">
-                    </label>
-                    <br>
-                    <input type="submit" value="Send" class="sentemail">
-		        </div>
-                <div class="col"></div>
-            </div>
-        </form>
-
-    <div class="container fluid">
+    <body>
+      <div class="container fluid">
         <div class="wrapper">
-            <footer-aside class="top-footer-aside aside-1"><a href="about.html">About</a></footer-aside>
-            <footer-aside class="top-footer-aside aside-2"><a href="city.html">City</a></footer-aside>
-            <footer-aside class="top-footer-aside aside-3"><a href="store.html">Store</a></footer-aside>
-            <footer-aside class="top-footer-aside aside-4"><a href="media.html">Media</a></footer-aside>
+          <article class="main">
+            <div class="logo">
+              <a href="home.html"
+                ><img src="assets/logo/primark-logo-3.PNG" alt="logo"
+              /></a>
+            </div>
+          </article>
+          <aside class="aside aside-1"><a href="about.html">About</a></aside>
+          <aside class="aside aside-2"><a href="city.html">City</a></aside>
+          <aside class="aside aside-3"><a href="store.html">Store</a></aside>
+          <aside class="aside aside-4"><a href="media.html">Media</a></aside>
         </div>
-        <div class="wrapper">
-        <ul class="social-media">
-            <li><a href="https://www.facebook.com/primark" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/primark" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/primark/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.pinterest.ca/primark/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
-        </ul>
-        </div>
+      </div>
+    </body>
+
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 90%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 10;
+        padding: 10;
+      }
+
+      #floating-panel {
+        padding: 10px;
+        line-height: 35px;
+        font-family: 'Roboto';
+        font-size: 18px;
+      }
+    </style>
+    <script>
+      'use strict'
+
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+      const stores = [
+        //STORES
+        //IRELAND
+        {
+          //1  MARY STREET
+          lat: 53.349019,
+          lng: -6.266548,
+        },
+        {
+          //2  CARLOW
+          lat: 52.835,
+          lng: -6.927
+        },
+        {
+          //3  DUN LAOGHAIRE
+          lat: 53.299,
+          lng: -6.182
+        },
+        {
+          //4  NAVAN
+          lat: 53.654,
+          lng: -6.688
+        },
+        {
+          //5  MULLINGAR
+          lat: 52.337,
+          lng: -6.461
+        },
+        {
+          //6  WEXFORD
+          lat: 53.525,
+          lng: -7.35
+        },
+        {
+          //7  PORTLAOISE
+          lat: 53.031,
+          lng: -7.297
+        },
+        {
+          //8  NUTGROVE
+          lat: 53.29,
+          lng: -6.268
+        },
+        {
+          //9  ENNIS
+          lat: 53.299,
+          lng: -6.182
+        },
+        {
+          //10  LIMERICK-DOORADOYLE
+          lat: 52.853,
+          lng: -8.984
+        },
+        {
+          //11  SLIGO
+          lat: 54.271,
+          lng: -8.476
+        },
+        {
+          //12  LETTERKENNY
+          lat: 54.946,
+          lng: -7.705
+        },
+        {
+          //13  GALWAY - HEADFORD RD
+          lat: 53.277,
+          lng: -9.051
+        },
+        {
+          //14  KILKENNY
+          lat: 52.653,
+          lng: -7.254
+        },
+        {
+          //15  LIMERICK-OCONNELL ST
+          lat: 52.664,
+          lng: -8.627
+        },
+        {
+          //16  SANTRY
+          lat: 53.392,
+          lng: -6.248
+        },
+        {
+          //17  ARTANE
+          lat: 53.383,
+          lng: -6.215
+        },
+        {
+          //18  DROGHEDA
+          lat: 53.715,
+          lng: -6.351
+        },
+        {
+          //19  NEWBRIDGE
+          lat: 52.933,
+          lng: -6.71
+        },
+        {
+          //20  WATERFORD
+          lat: 52.261,
+          lng: -7.112
+        },
+        {
+          //21  GALWAY - EYRE SQ
+          lat: 53.275,
+          lng: -9.051
+        },
+        {
+          //22  TRALEE
+          lat: 52.954,
+          lng: -7.798
+        },
+        {
+          //23  LONGFORD
+          lat: 53.729,
+          lng: -7.799
+        },
+        {
+          //24  CASTLEBAR
+          lat: 54.273,
+          lng: -8.478
+        },
+        {
+          //25  CORK - PATRICK ST
+          lat: 51.899,
+          lng: -8.471
+        },
+        {
+          //26  O'CONNELL STREET
+          lat: 53.349,
+          lng: -6.26
+        },
+        {
+          //27  CLONMEL
+          lat: 52.353,
+          lng: -7.703
+        },
+        {
+          //28  ATHLONE
+          lat: 53.42,
+          lng: -7.934
+        },
+        {
+          //29  BLANCHARDSTOWN
+          lat: 53.393,
+          lng: -6.39
+        },
+        {
+          //30  SWORDS
+          lat: 53.471,
+          lng: -6.23
+        },
+        {
+          //31  DUNDRUM
+          lat: 53.287,
+          lng: -6.242
+        },
+        {
+          //32  DUNDALK MARSHES
+          lat: 54.001,
+          lng: -6.399
+        },
+        {
+          //33  BALLINA
+          lat: 54.114,
+          lng: -9.154
+        },
+        {
+          //34  CORK - WILTON
+          lat: 51.881,
+          lng: -8.508
+        },
+        {
+          //35  KILLARNEY
+          lat: 52.06,
+          lng: -9.51
+        },
+        {
+          //36  LIFFEY VALLEY
+          lat: 53.353,
+          lng: -6.391
+        },
+
+        //USA
+        {
+          //1  BOSTON - DTX
+          lat: 42.355,
+          lng: -71.06
+        },
+        {
+          //2  BURLINGTON
+          lat: 42.483,
+          lng: -71.214
+        },
+        {
+          //3  KING OF PRUSSIA
+          lat: 40.087,
+          lng: -75.394
+        },
+        {
+          //4  DANBURY
+          lat: 41.381,
+          lng: -73.48
+        },
+        {
+          //5  FREEHOLD
+          lat: 40.254,
+          lng: -74.3
+        },
+        {
+          //6  BRAINTREE
+          lat: 42.222,
+          lng: -71.024
+        },
+        {
+          //7  WILLOW GROVE
+          lat: 40.14,
+          lng: -75.124
+        },
+        {
+          //8  STATEN ISLAND
+          lat: 40.582,
+          lng: -74.166
+        },
+        {
+          //9  AMERICAN DREAM OPENING SOON
+          lat: 40.822,
+          lng: -74.088
+        },
+        {
+          //10  BROOKLYN
+          lat: 40.61,
+          lng: -73.922
+        },
+        {
+          //11  SAWGRASS MILLS OPENING SOON
+          lat: 26.151,
+          lng: -80.322
+        },
+        {
+          //12 CHICAGO OPENING SOON
+          lat: 41.883,
+          lng: -87.627
+        },
+
+        //FRANCE & ITALY
+        {
+          //1  MARSEILLE LITTORAL
+          lat: 43.364,
+          lng: 5.35
+        },
+        {
+          //2  DIJON-TOISON D'OR
+          lat: 47.356,
+          lng: 5.046
+        },
+        {
+          //3  TOULOUSE
+          lat: 43.608,
+          lng: 1.445
+        },
+        {
+          //4  LYON
+          lat: 45.762,
+          lng: 4.857
+        },
+        {
+          //5  CAGNES-SUR-MER
+          lat: 43.665,
+          lng: 7.127
+        },
+        {
+          //6  LA VALETTE DU VAR
+          lat: 43.137,
+          lng: 6.004
+        },
+        {
+          //7  BORDEAUX
+          lat: 44.879,
+          lng: -0.569
+        },
+        {
+          //8  PARIS - O'PARINOR
+          lat: 48.957,
+          lng: 2.475
+        },
+        {
+          //9  PARIS - VILLENEUVE
+          lat: 48.923,
+          lng: 2.328
+        },
+        {
+          //10  PARIS - CRETEIL
+          lat: 48.779,
+          lng: 2.455
+        },
+        {
+          //11  PARIS VAL D'EUROPE
+          lat: 48.855,
+          lng: 2.78
+        },
+        {
+          //12  METZ
+          lat: 49.107,
+          lng: 6.183
+        },
+        {
+          //13  PARIS - EVRY2
+          lat: 48.63,
+          lng: 2.427
+        },
+        {
+          //14  LILLE
+          lat: 50.637,
+          lng: 3.074
+        },
+        {
+          //15  STRASBOURG OPENING SOON
+          lat: 48.586,
+          lng: 7.745
+        },
+        {
+          //16  LE HAVRE
+          lat: 49.493,
+          lng: 0.107
+        },
+        {
+          //17  PARIS - PLAISIR OPENING SOON
+          lat: 48.883,
+          lng: 2.134
+        },
+        {
+          //18  LENS - NOYELLES
+          lat: 50.413,
+          lng: 2.977
+        },
+        {
+          //19  PARIS-BELLE EPINE
+          lat: 48.757,
+          lng: 2.371
+        },
+        {
+          //20  ARESE - IL CENTRO
+          lat: 45.563,
+          lng: 9.053
+        },
+        {
+          //21  FLORENCE
+          lat: 43.842,
+          lng: 11.141
+        },
+        {
+          //22  BRESCIA
+          lat: 45.559,
+          lng: 9.995
+        },
+        {
+          //23  VERONA
+          lat: 45.406,
+          lng: 10.977
+        },
+        {
+          //24  MILAN FIORDALISO
+          lat: 45.393,
+          lng: 9.176
+        },
+        {
+          //25  ROMA - MAXIMO OPENING SOON
+          lat: 41.821,
+          lng: 12.483
+        },
+
+        //IBERIA
+        {
+          //1  MADRID-XANADU
+          lat: 40.299,
+          lng: -3.926
+        },
+        {
+          //2  JEREZ
+          lat: 36.691629,
+          lng: -6.155875
+        },
+        {
+          //3  OVIEDO - BUENAVISTA
+          lat: 43.390882,
+          lng: -5.79996
+        },
+        {
+          //4  MADRID-P.CORREDOR
+          lat: 40.477299,
+          lng: -3.480388
+        },
+        {
+          //5  BILBAO - BALLONTI
+          lat: 43.311526,
+          lng: -3.022047
+        },
+        {
+          //6  MADRID-ISLAZUL
+          lat: 40.364816,
+          lng: -3.737234
+        },
+        {
+          //7  OVIEDO P.PRINCIPADO
+          lat: 43.390874,
+          lng: -5.800186
+        },
+        {
+          //8  MADRID-LA GAVIA
+          lat: 40.368002,
+          lng: -3.597208
+        },
+        {
+          //9  ALGECIRAS
+          lat: 36.134788,
+          lng: -5.463226
+        },
+        {
+          //10  BARCA - DIAGONAL MAR
+          lat: 41.40995,
+          lng: 2.216657
+        },
+        {
+          //11  BARCA - CORNELLA
+          lat: 41.40995,
+          lng: 2.216657
+        },
+        {
+          //12  ORIHUELA LA ZENIA
+          lat: 37.931807,
+          lng: -0.737569
+        },
+        {
+          //13  BADAJOZ
+          lat: 38.881806,
+          lng: -7.007992
+        },
+        {
+          //14  MADRID-MAJADAHONDA
+          lat: 40.492758,
+          lng: -3.900026
+        },
+        {
+          //15  LA CORUNA -MARINEDA
+          lat: 43.346839,
+          lng: -8.425166
+        },
+        {
+          //16  ELCHE
+          lat: 38.263163,
+          lng: -0.719327
+        },
+        {
+          //17  ZARAGOZA P.VENECIA
+          lat: 41.608816,
+          lng: -0.884751
+        },
+        {
+          //18  CASTELLON
+          lat: 39.979488,
+          lng: -0.063236
+        },
+        {
+          //19  SANTIAGO AS CANCELAS
+          lat: 42.889116,
+          lng: -8.526174
+        },
+        {
+          //20  VALLADOLID RIO
+          lat: 41.629157,
+          lng: -4.783847
+        },
+        {
+          //21  MALAGA - LARIOS
+          lat: 36.715573,
+          lng: -4.433645
+        },
+        {
+          //22  MADRID-PARQUE SUR
+          lat: 40.339853,
+          lng: -3.730678
+        },
+        {
+          //23  ALICANTE - GRAN VIA
+          lat: 38.367083,
+          lng: -0.469016
+        },
+        {
+          //24  CORDOBA -EL ARCANGEL
+          lat: 37.878296,
+          lng: -4.765759
+        },
+        {
+          //25  BARCA - L'ILLA
+          lat: 41.409666,
+          lng: 2.216265
+        },
+        {
+          //26  PAMPLONA LA MOREA
+          lat: 42.783895,
+          lng: -1.632658
+        },
+        {
+          //27  VALENCIA BONAIRE
+          lat: 39.472056,
+          lng: -0.488964
+        },
+        {
+          //28  HUELVA (HOLEA)
+          lat: 37.271769,
+          lng: -6.919976
+        },
+        {
+          //29  CARTAGENA (ESP MED)
+          lat: 37.625984,
+          lng: -0.948611
+        },
+        {
+          //30  SANTANDER VALLE REAL
+          lat: 43.427897,
+          lng: -3.837567
+        },
+        {
+          //31  VITORIA
+          lat: 42.862027,
+          lng: -2.667896
+        },
+        {
+          //32  MADRID - GRAN VIA
+          lat: 40.420366,
+          lng: -3.70339
+        },
+        {
+          //33  FUENGIROLA (P.MIRAM)
+          lat: 36.539004,
+          lng: -4.624353
+        },
+        {
+          //34  ALBACETE
+          lat: 39.242687,
+          lng: -1.383002
+        },
+        {
+          //35  VALENCIA RUZAFA
+          lat: 39.466096,
+          lng: -0.374601
+        },
+        {
+          //36  ROQUETAS DE MAR
+          lat: 36.77451,
+          lng: -2.613295
+        },
+        {
+          //37  GRAN CAN EL MIRADOR
+          lat: 28.034094,
+          lng: -15.404998
+        },
+        {
+          //38  GRAN CAN LAS ARENAS
+          lat: 28.124756,
+          lng: -15.456928
+        },
+        {
+          //39  TENERIFE
+          lat: 28.456713,
+          lng: -16.259165
+        },
+        {
+          //40  LOGRONO BERCEO
+          lat: 42.463102,
+          lng: -2.419987
+        },
+        {
+          //41  MADRID-PLENILUNIO NE
+          lat: 40.44769,
+          lng: -3.586918
+        },
+        {
+          //42  MURCIA NEW
+          lat: 38.038333,
+          lng: -1.148951
+        },
+        {
+          //43  PALMA DE MALLORCA
+          lat: 39.554862,
+          lng: 2.707395
+        },
+        {
+          //44  ALMERIA
+          lat: 36.861274,
+          lng: -2.433631
+        },
+        {
+          //45  TARRAGONA
+          lat: 41.116914,
+          lng: 1.238666
+        },
+        {
+          //46  GRANADA
+          lat: 37.148674,
+          lng: -3.613204
+        },
+        {
+          //47  SEVILLE-TORRE SEVILL
+          lat: 37.392101,
+          lng: -6.009784
+        },
+        {
+          //48  SEVILLA - LAGOH
+          lat: 37.340852,
+          lng: -5.986808
+        },
+        {
+          //49  BARCA - PL CATALUNYA
+          lat: 41.385626,
+          lng: 2.170501
+        },
+        {
+          //50  LISBON - UBBO
+          lat: 38.777851,
+          lng: -9.218869
+        },
+        {
+          //51  PORTO - P.NASCENTRE
+          lat: 41.174223,
+          lng: -8.566457
+        },
+        {
+          //52  SINTRA - FORUM
+          lat: 38.775161,
+          lng: -9.338596
+        },
+        {
+          //53  PORTIMAO - AQUA
+          lat: 37.146953,
+          lng: -8.54253
+        },
+        {
+          //54  BRAGA - PARQUE
+          lat: 41.557215,
+          lng: -8.405764
+        },
+        {
+          //55  COIMBRA FORUM
+          lat: 40.212242,
+          lng: -8.443739
+        },
+        {
+          //56  LISBON - COLOMBO
+          lat: 38.755191,
+          lng: -9.189788
+        },
+        {
+          //57  PORTO - NORTE SC
+          lat: 41.180627,
+          lng: -8.655934
+        },
+        {
+          //58  LOULE
+          lat: 37.098801,
+          lng: -7.997253
+        },
+        {
+          //59  ALMADA FORUM
+          lat: 38.659138,
+          lng: -9.173741
+        },
+
+        //NORTHERN EUROPE
+        {
+          //1  ROTTERDAM
+          lat: 51.947186,
+          lng: 4.556583
+        },
+        {
+          //2  HOOFDDORP
+          lat: 52.303713,
+          lng: 4.694099
+        },
+        {
+          //3  NIJMEGEN
+          lat: 51.846213,
+          lng: 5.863073
+        },
+        {
+          //4  ZAANDAM
+          lat: 52.438623,
+          lng: 4.816577
+        },
+        {
+          //5  ALMERE
+          lat: 52.374243,
+          lng: 5.220035
+        },
+        {
+          //6  EINDHOVEN
+          lat: 51.440841,
+          lng: 5.478415
+        },
+        {
+          //7  DEN HAAG
+          lat: 52.07793,
+          lng: 4.315076
+        },
+        {
+          //8  ZOETERMEER
+          lat: 52.061149,
+          lng: 4.484326
+        },
+        {
+          //9  ARNHEM
+          lat: 51.981852,
+          lng: 5.908636
+        },
+        {
+          //10  ENSCHEDE
+          lat: 52.217838,
+          lng: 6.89609
+        },
+        {
+          //11  VENLO
+          lat: 51.370429,
+          lng: 6.167677
+        },
+        {
+          //12  ROTTERDAM ZUIDPLEIN
+          lat: 51.885458,
+          lng: 4.489771
+        },
+        {
+          //13  AMSTERDAM DAMRAK
+          lat: 52.374577,
+          lng: 4.894396
+        },
+        {
+          //14  DORDRECHT
+          lat: 51.813311,
+          lng: 4.669924
+        },
+        {
+          //15  GRONINGEN
+          lat: 53.214739,
+          lng: 6.557609
+        },
+        {
+          //16  ALKMAAR
+          lat: 52.630633,
+          lng: 4.746931
+        },
+        {
+          //17  HILVERSUM
+          lat: 52.22487,
+          lng: 5.17641
+        },
+        {
+          //18  ZWOLLE
+          lat: 52.512412,
+          lng: 6.091726
+        },
+        {
+          //19  TILBURG
+          lat: 51.55523,
+          lng: 5.08626
+        },
+        {
+          //20  UTRECHT
+          lat: 52.09052,
+          lng: 5.11453
+        },
+        {
+          //21  LIEGE
+          lat: 50.632165,
+          lng: 5.578453
+        },
+        {
+          //22  GENT
+          lat: 51.056934,
+          lng: 3.724089
+        },
+        {
+          //23  BRUSSELS-RUE NEUVE
+          lat: 50.851218,
+          lng: 4.354566
+        },
+        {
+          //24  HASSELT MOLENPOORT
+          lat: 50.932988,
+          lng: 5.338016
+        },
+        {
+          //25  ANTWERP
+          lat: 51.21796,
+          lng: 4.406665
+        },
+        {
+          //26  BRUXELLES D'IXELLES
+          lat: 50.836084,
+          lng: 4.362838
+        },
+        {
+          //27  CHARLEROI
+          lat: 50.411436,
+          lng: 4.444103
+        },
+        {
+          //28  MONS
+          lat: 50.450933,
+          lng: 3.949518
+        },
+        {
+          //29  WARSAW - MLOCINY
+          lat: 52.295695,
+          lng: 20.930509
+        },
+        {
+          //30  INNSBRUCK
+          lat: 47.266242,
+          lng: 11.404399
+        },
+        {
+          //31  GERASDORF - G3
+          lat: 48.341231,
+          lng: 16.463062
+        },
+        {
+          //32  VIENNA SCS
+          lat: 48.113929,
+          lng: 16.316691
+        },
+        {
+          //33  GRAZ
+          lat: 47.011796,
+          lng: 15.408988
+        },
+        {
+          //34  LINZ
+          lat: 48.243508,
+          lng: 14.235093
+        },
+        {
+          //35  LJUBLJANA - CITYPARK
+          lat: 46.069027,
+          lng: 14.545713
+        },
+        {
+          //36  BREMEN
+          lat: 53.109511,
+          lng: 8.749788
+        },
+        {
+          //37  FRANKFURT NWZ
+          lat: 50.157299,
+          lng: 8.632392
+        },
+        {
+          //38  GELSENKIRCHEN
+          lat: 51.508309,
+          lng: 7.098532
+        },
+        {
+          //39  HANNOVER
+          lat: 52.373654,
+          lng: 9.736086
+        },
+        {
+          //40  ESSEN
+          lat: 51.456108,
+          lng: 7.012059
+        },
+        {
+          //41  SAARBRUCKEN
+          lat: 49.236974,
+          lng: 6.99194
+        },
+        {
+          //42  BERLIN SSC
+          lat: 52.465591,
+          lng: 13.327706
+        },
+        {
+          //43  DORTMUND
+          lat: 51.513128,
+          lng: 7.459137
+        },
+        {
+          //44  BERLIN AP
+          lat: 52.522575,
+          lng: 13.413413
+        },
+        {
+          //45  FRANKFURT-ZEIL
+          lat: 50.114768,
+          lng: 8.683552
+        },
+        {
+          //46  KARLSRUHE
+          lat: 49.009312,
+          lng: 8.393664
+        },
+        {
+          //47  DUSSELDORF
+          lat: 51.227173,
+          lng: 6.78464
+        },
+        {
+          //48  COLOGNE
+          lat: 50.937056,
+          lng: 6.948599
+        },
+        {
+          //49  KREFELD
+          lat: 51.333786,
+          lng: 6.565071
+        },
+        {
+          //50  BRAUNSCHWEIG
+          lat: 52.264782,
+          lng: 10.521297
+        },
+        {
+          //51  KIEL
+          lat: 54.321299,
+          lng: 10.136442
+        },
+        {
+          //52  WEITERSTADT
+          lat: 49.89215,
+          lng: 8.606703
+        },
+        {
+          //53  STUTTGART
+          lat: 48.790727,
+          lng: 9.182132
+        },
+        {
+          //54  DRESDEN
+          lat: 51.045731,
+          lng: 13.734552
+        },
+        {
+          //55  KAISERSLAUTERN
+          lat: 49.444084,
+          lng: 7.765167
+        },
+        {
+          //56  LEIPZIG
+          lat: 51.342884,
+          lng: 12.372907
+        },
+        {
+          //57  HAMBURG
+          lat: 53.540435,
+          lng: 10.105019
+        },
+        {
+          //58  MANNHEIM
+          lat: 49.486109,
+          lng: 8.473232
+        },
+        {
+          //59  INGOLSTADT
+          lat: 48.764697,
+          lng: 11.427133
+        },
+        {
+          //60  BONN
+          lat: 50.732801,
+          lng: 7.097349
+        },
+        {
+          //61  WUPPERTAL
+          lat: 51.255503,
+          lng: 7.150083
+        },
+        {
+          //62  STUTTGART KOENGIS
+          lat: 48.775785,
+          lng: 9.176019
+        },
+        {
+          //63  MUNSTER
+          lat: 51.962431,
+          lng: 7.629636
+        },
+        {
+          //64  MUNCHEN PEP
+          lat: 48.101432,
+          lng: 11.644836
+        },
+        {
+          //65  BERLIN - GROPIUS
+          lat: 52.430266,
+          lng: 13.456829
+        },
+        {
+          //66  BERLIN ZOOM
+          lat: 52.505971,
+          lng: 13.331798
+        },
+        {
+          //67  BIELEFELD
+          lat: 52.025602,
+          lng: 8.532888
+        },
+        {
+          //68  PRAGUE WENCESLAS
+          lat: 50.080864,
+          lng: 14.42884
+        },
+
+        //UK
+        {
+          //1  MANCHESTER TFD CTR
+          lat: 53.46707,
+          lng: -2.341962
+        },
+        {
+          //2  LONDON - WHITE CITY
+          lat: 51.508055,
+          lng: -0.223647
+        },
+        {
+          //3  OXFORD WESTGATE
+          lat: 51.750146,
+          lng: -1.261527
+        },
+        {
+          //4  BIRMINGHAM - FORT
+          lat: 52.508309,
+          lng: -1.81682
+        },
+        {
+          //5  MANCHESTER - MKT ST
+          lat: 53.481522,
+          lng: -2.239338
+        },
+        {
+          //6  SWINDON
+          lat: 51.561192,
+          lng: -1.784467
+        },
+        {
+          //7  LONDON - OSW
+          lat: 51.513516,
+          lng: -0.156185
+        },
+        {
+          //8  MERRYHILL
+          lat: 52.482207,
+          lng: -2.112345
+        },
+        {
+          //9  LONDON - OSE
+          lat: 51.516518,
+          lng: -0.131088
+        },
+        {
+          //10  MILTON KEYNES
+          lat: 52.043972,
+          lng: -0.754497
+        },
+        {
+          //11  BATH
+          lat: 51.381069,
+          lng: -2.360513
+        },
+        {
+          //12  CARLISLE
+          lat: 54.893883,
+          lng: -2.9349
+        },
+        {
+          //13  READING BROAD STREET
+          lat: 51.455216,
+          lng: -0.971678
+        },
+        {
+          //14  BELFAST - BANK BDGS
+          lat: 54.599338,
+          lng: -5.931735
+        },
+        {
+          //15  BELFAST DONEGALL PL
+          lat: 54.598264,
+          lng: -5.930505
+        },
+        {
+          //16  OMAGH
+          lat: 54.600035,
+          lng: -7.300027
+        },
+        {
+          //17  ABERDEEN
+          lat: 57.145662,
+          lng: -2.101325
+        },
+        {
+          //18  DUNDEE
+          lat: 56.460041,
+          lng: -2.971202
+        },
+        {
+          //19  GLASGOW - S'HALL ST
+          lat: 55.864571,
+          lng: -4.259677
+        },
+        {
+          //20  EDINBURGH - FORT
+          lat: 55.934671,
+          lng: -3.100461
+        },
+        {
+          //21  CARDIFF
+          lat: 51.480957,
+          lng: -3.177318
+        },
+        {
+          //22  LLANDUDNO
+          lat: 53.321292,
+          lng: -3.82163
+        },
+        {
+          //23  EDINBURGH
+          lat: 55.952003,
+          lng: -3.198883
+        },
+        {
+          //24  BIRMINGHAM - HIGH ST
+          lat: 52.478848,
+          lng: -1.894215
+        }
+      ]
+
+      const depots = [
+        //DEPOTS
+        {
+          //1  PILZEN-DEPOT
+          lat: 51.21796,
+          lng: 4.406665
+        },
+        {
+          //2  DHL DE
+          lat: 51.109094,
+          lng: 6.437753
+        },
+        {
+          //3  DSV IR
+          lat: 53.201086,
+          lng: -6.737577
+        },
+        {
+          //4  DHL SP
+          lat: 40.755083,
+          lng: -3.038716
+        },
+        {
+          //5  ROOS-DEPOT
+          lat: 51.55705,
+          lng: 4.47752
+        },
+        {
+          //6  / 955 DHL UK
+          lat: 52.395224,
+          lng: -0.51466
+        },
+        {
+          //7  ISLIP MAIN
+          lat: 52.300618,
+          lng: -0.622436
+        },
+        {
+          //8  DEPOT USA
+          lat: 40.606522,
+          lng: -75.33517
+        }
+      ]
+
+      const hq = [
+        //HEADQUARTERS
+        {
+          //1  ARTHUR RYAN HOUSE
+          lat: 53.349816,
+          lng: -6.266406
+        }
+      ]
+      let markers = []
+      let map
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {
+            //MUNICH
+            lat: 48.1351,
+            lng: 11.582
+          },
+          zoom: 5,
+          styles: [
+            {
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#ebe3cd'
+                }
+              ]
+            },
+            {
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#523735'
+                }
+              ]
+            },
+            {
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#f5f1e6'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#c9b2a6'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.land_parcel',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#dcd2be'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.land_parcel',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#ae9e90'
+                }
+              ]
+            },
+            {
+              featureType: 'landscape.natural',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#dfd2ae'
+                }
+              ]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#dfd2ae'
+                }
+              ]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#93817c'
+                }
+              ]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry.fill',
+              stylers: [
+                {
+                  color: '#a5b076'
+                }
+              ]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#447530'
+                }
+              ]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#f5f1e6'
+                }
+              ]
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#fdfcf8'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#f8c967'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#e9bc62'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway.controlled_access',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#e98d58'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway.controlled_access',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#db8555'
+                }
+              ]
+            },
+            {
+              featureType: 'road.local',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#806b63'
+                }
+              ]
+            },
+            {
+              featureType: 'transit.line',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#dfd2ae'
+                }
+              ]
+            },
+            {
+              featureType: 'transit.line',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#8f7d77'
+                }
+              ]
+            },
+            {
+              featureType: 'transit.line',
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#ebe3cd'
+                }
+              ]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#dfd2ae'
+                }
+              ]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry.fill',
+              stylers: [
+                {
+                  color: '#b9d3c2'
+                }
+              ]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#92998d'
+                }
+              ]
+            }
+          ]
+        })
+      }
+
+      function drop() {
+        clearMarkers()
+
+        for (let i = 0; i < stores.length; i++) {
+          addMarkerWithTimeout(stores[i], i * 25)
+        }
+      }
+
+      const contentString = `<div id="content">  <div id="siteNotice"></div>
+    <h2 id="firstHeading" class="firstHeading">Primark / Penneys</h2>
+    <div id="bodyContent">
+    <p>Founded 1969 in Dublin, trading in 12 countries</p>
+    <img src="/assets/images/stores/topglass/structural_glass_by_topglass_pennys_dublin.jpg">
     </div>
+    </div>`
 
-    <div class="wrapper">
-        <footer-aside class="btm-footer-aside aside-2"><div><a href="index.html" id="footerlogo"></a>© 2020</div></footer-aside>
+
+      function loadMarkers(items, icon) {
+        let features = items.map(d => ({
+          position: new google.maps.LatLng(d.lat, d.lng),
+          type: 'depot'
+        }))
+        return features.map(feature => {
+          const infowindow = new google.maps.InfoWindow({
+            content: contentString
+          })
+          const marker = new google.maps.Marker({
+            position: feature.position,
+            animation: google.maps.Animation.DROP,
+            icon,
+            map
+          })
+          marker.addListener('click', () => {
+            infowindow.open(map, marker)
+          })
+
+          return marker
+        })
+      }
+
+      function loadImages() {
+        clearMarkers()
+        const iconBase = './assets/images/icons' //'../assets/images/icons'
+        const depotImage = `${iconBase}/small-depot.png`
+        const hqImage = `${iconBase}/large-hq.png`
+        const storesImage = `${iconBase}/store.png`
+        const storeMarkers = loadMarkers(stores, storesImage)
+        const depotMarkers = loadMarkers(depots, depotImage)
+        const hqMarkers = loadMarkers(hq, hqImage)
+
+        new MarkerClusterer(map, storeMarkers, {
+          imagePath:
+            'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+        })
+
+        new MarkerClusterer(map, depotMarkers, {
+          imagePath:
+            'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+        })
+      }
+
+      function addMarkerWithTimeout(position, timeout) {
+        window.setTimeout(() => {
+          markers.push(
+            new google.maps.Marker({
+              position: position,
+              map,
+              animation: google.maps.Animation.DROP,
+              icon: '/assets/images/icons/primark-circle.png'
+            })
+          )
+        }, timeout)
+      }
+
+      function clearMarkers() {
+        for (let i = 0; i < markers.length; i++) {
+          markers[i].setMap(null)
+        }
+
+        markers = []
+      }
+
+      //Google Maps Documentation on Info Windows
+      //https://developers.google.com/maps/documentation/javascript/infowindows
+
+      //Google Maps Documentation on Custom Markers
+      //https://developers.google.com/maps/documentation/javascript/custom-markers
+    </script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <button id="drop" onclick="loadImages()">Find Primark stores</button>
+      <button type="reset" onclick="document.location.reload()">RESET</button>
     </div>
-
-    </footer>
-
+    <div id="map"></div>
+    <script src="assets/js/reset.js" async></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCMp-BmFU6ImQLQp798O8uu9cx7Zd69xTg&center=47.6497687174687,-122.46803435860201&zoom=11&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x242f3e&style=element:labels.text.fill%7Ccolor:0x746855&style=element:labels.text.stroke%7Ccolor:0x242f3e&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi.park%7Celement:geometry%7Ccolor:0x263c3f&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x6b9a76&style=feature:road%7Celement:geometry%7Ccolor:0x38414e&style=feature:road%7Celement:geometry.stroke%7Ccolor:0x212a37&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x9ca5b3&style=feature:road.highway%7Celement:geometry%7Ccolor:0x746855&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x1f2835&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xf3d19c&style=feature:transit%7Celement:geometry%7Ccolor:0x2f3948&style=feature:transit.station%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:water%7Celement:geometry%7Ccolor:0x17263c&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x515c6d&style=feature:water%7Celement:labels.text.stroke%7Ccolor:0x17263c&size=480x360"
+      defer
+    ></script>
+  </body>
 </html>
