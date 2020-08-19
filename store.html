@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +32,24 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMp-BmFU6ImQLQp798O8uu9cx7Zd69xTg&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
+    <style>
+      #map {
+        height: 90%;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      #floating-panel {
+        padding: 10px;
+        line-height: 35px;
+        font-family: 'Roboto';
+        font-size: 18px;
+      }
+    </style>
+    </head>
 
+<body>
     <header>
       <nav class="navalert">
         <div class="row d-none d-sm-block">
@@ -45,46 +62,23 @@
       </nav>
     </header>
 
-    <body>
+
       <div class="container fluid">
         <div class="wrapper">
-          <article class="main">
+          <div class="main">
             <div class="logo">
               <a href="index.html"
                 ><img src="assets/logo/primark-logo-3.PNG" alt="logo"
               /></a>
             </div>
-          </article>
+          </div>
                 <aside class="aside aside-1"><a href="index.html">Home</a></aside>
                 <aside class="aside aside-2"><a href="city.html">City</a></aside>
                 <aside class="aside aside-3"><a href="store.html">Store</a></aside>
                 <aside class="aside aside-4"><a href="contact.html">Contact</a></aside>
         </div>
       </div>
-    </body>
 
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 90%;
-      }
-
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 10;
-        padding: 10;
-      }
-
-      #floating-panel {
-        padding: 10px;
-        line-height: 35px;
-        font-family: 'Roboto';
-        font-size: 18px;
-      }
-    </style>
     <script>
       'use strict'
 
@@ -1595,8 +1589,7 @@
       //Google Maps Documentation on Custom Markers
       //https://developers.google.com/maps/documentation/javascript/custom-markers
     </script>
-  </head>
-  <body>
+
     <div id="floating-panel">
       <button id="drop" onclick="loadImages()">Find Primark stores</button>
       <button type="reset" onclick="document.location.reload()">RESET</button>
@@ -1608,11 +1601,13 @@
       src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCMp-BmFU6ImQLQp798O8uu9cx7Zd69xTg&center=47.6497687174687,-122.46803435860201&zoom=11&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x242f3e&style=element:labels.text.fill%7Ccolor:0x746855&style=element:labels.text.stroke%7Ccolor:0x242f3e&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi.park%7Celement:geometry%7Ccolor:0x263c3f&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x6b9a76&style=feature:road%7Celement:geometry%7Ccolor:0x38414e&style=feature:road%7Celement:geometry.stroke%7Ccolor:0x212a37&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x9ca5b3&style=feature:road.highway%7Celement:geometry%7Ccolor:0x746855&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x1f2835&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xf3d19c&style=feature:transit%7Celement:geometry%7Ccolor:0x2f3948&style=feature:transit.station%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:water%7Celement:geometry%7Ccolor:0x17263c&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x515c6d&style=feature:water%7Celement:labels.text.stroke%7Ccolor:0x17263c&size=480x360"
       defer
     ></script>
-  </body>
+
 <div>
     <footer class="footer">
     <div class="wrapper">
         <footer-aside class="btm-footer-aside aside-2"><div><a href="index.html" id="footerlogo"></a>© 2020</div></footer-aside>
     </div>
     </footer>
+</div>
+</body>
 </html>

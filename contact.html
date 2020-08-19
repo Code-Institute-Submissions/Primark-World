@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script type="text/javascript">
+    <script>
    (function(){
       emailjs.init("user_2HoXcxR4cgLMgB2oH7lbU");
    })();
@@ -17,14 +17,24 @@
     <title>Primark World</title>
 </head>
 
+<body>
 <header>
+    <nav class="navalert">
+        <div class="row d-none d-sm-block">
+            <div class="col-12">
+                <div class="site-wide-alert alert alert-primary text-center">
+                    <strong>Welcome to Primark World</strong> Life is Good
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container fluid">
         <div class="wrapper">
-            <article class="main">
+            <div class="main">
                 <div class="logo">
                 <a href="index.html"><img src="assets/logo/primark-logo-3.PNG" alt="logo"></a>
                 </div>
-            </article>
+            </div>
                 <aside class="aside aside-1"><a href="index.html">Home</a></aside>
                 <aside class="aside aside-2"><a href="city.html">City</a></aside>
                 <aside class="aside aside-3"><a href="store.html">Store</a></aside>
@@ -34,7 +44,6 @@
 </header>
 <br>
 
-<body>
 <div class="container fluid">
         <div class="city-container">
             <div class="box box2">
@@ -46,7 +55,7 @@
                     <input type="text" id="fname" name="fullname" placeholder="Your full name..">
                     <br>
                     <br>
-                    <label for="country" input type="text">Country</label>
+                    <label for="country">Country</label>
                     <br>
                         <select id="country" name="country">
                         <option value="United States">United States</option>
@@ -307,42 +316,39 @@
             </div>
         </div>
     </div>
-</div>
-<br>
-<hr>
-<div class="container fluid">
+    <br>
+    <hr>
+    <div class="container fluid">
     <div class="row">
         <div class="col" id="hero-image-media" title="primark-dublin">
         </div> 
     </div>
 </div>
+</div>
+
 <hr>
 
 <br>
 
-</body>
-
-
 <div>
     <footer class="footer">
-        <form>
+        <form onsubmit="return sendMail(this);">
             <div class="row">
                 <div class="col"></div>
                 <div class="form-group col-md-3" id="call-to-action">
-                <form onsubmit="return sendMail(this);">
                     <label for="emailaddress">Sign Up to Our Newsletter
-                    <input type="text" name="emailaddress" class="form-control text-center" required placeholder="name@example.com">
+                    <input id="emailaddress" name="emailaddress" class="form-control text-center" required placeholder="name@example.com">
                     </label>
                     <br>
                     <input type="submit" value="Send" class="btn btn-secondary center-block sentemail">
-		        </form>
                 </div>
                 <div class="col"></div>
             </div>
         </form>
+        
         <div class="container fluid">
             <div class="wrapper">
-                <footer-aside class="top-footer-aside aside-1"><a href="map.html">Map</a></footer-aside>
+                <footer-aside class="top-footer-aside aside-1"><a href="index.html">Home</a></footer-aside>
                 <footer-aside class="top-footer-aside aside-2"><a href="city.html">City</a></footer-aside>
                 <footer-aside class="top-footer-aside aside-3"><a href="store.html">Store</a></footer-aside>
                 <footer-aside class="top-footer-aside aside-4"><a href="contact.html">Contact</a></footer-aside>
@@ -356,12 +362,11 @@
                 <li><a href="https://www.pinterest.ca/primark/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
             </ul>
         </div>
-
-    <div class="wrapper">
-        <footer-aside class="btm-footer-aside aside-2"><div><a href="index.html" id="footerlogo"></a>© 2020</div></footer-aside>
-    </div>
+        <div class="wrapper">
+            <footer-aside class="btm-footer-aside aside-2"><div><a href="index.html" id="footerlogo"></a>© 2020</div></footer-aside>
+        </div>
     </footer>
 </div>
     <script src="/js/email.js"></script>
-
+</body>
 </html>
