@@ -18,46 +18,36 @@
 </head>
 
 <header>
-    <nav class="navalert">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="site-wide-alert alert alert-primary text-center">
-                    <strong>Welcome to Primark World</strong> Life is Good
+    <div class="container fluid">
+        <div class="wrapper">
+            <article class="main">
+                <div class="logo">
+                <a href="home.html"><img src="assets/logo/primark-logo-3.PNG" alt="logo"></a>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-<body>
- 
-        <div class="container fluid">
-            <div class="wrapper">
-                <article class="main">
-                    <div class="logo">
-                    <a href="index.html"><img src="assets/logo/primark-logo-3.PNG" alt="logo"></a>
-                    </div>
-                </article>
-                <aside class="aside aside-1"><a href="about.html">About</a></aside>
+            </article>
+                <aside class="aside aside-1"><a href="index.html">Home</a></aside>
                 <aside class="aside aside-2"><a href="city.html">City</a></aside>
                 <aside class="aside aside-3"><a href="store.html">Store</a></aside>
-                <aside class="aside aside-4"><a href="media.html">Media</a></aside>
-            </div>
+                <aside class="aside aside-4"><a href="media.html">Contact</a></aside>
         </div>
-</body>
+    </div>
+</header>
+<br>
 
+<body>
 <div class="container fluid">
-    <div class="city-container">
-        <div class="box box2">
-                <div class="text center">
+        <div class="city-container">
+            <div class="box box2">
+                <div class="text center" id="important">
                     <br><h5>CONTACT US</h5><br>
                 </div>
                 <div class="frame text-left">
-                	<div id="form" class="formContainer">
-				    <form onsubmit="return sendMail(this);" id="mainform">  
-                    <form action="get-in-touch.html">
                     <label for="fname">Full Name</label>
                     <input type="text" id="fname" name="fullname" placeholder="Your full name..">
-                    <label for="country">Country</label>
+                    <br>
+                    <br>
+                    <label for="country" input type="text">Country</label>
+                    <br>
                         <select id="country" name="country">
                         <option value="United States">United States</option>
                         <option value="Afganistan">Afghanistan</option>
@@ -307,46 +297,26 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                         </select>
+                        <br>
+                        <br>
                     <label for="subject">Subject</label>
+                    <br>
                     <textarea id="subject" name="subject" placeholder="Write your inquiry.." style="height:6em"></textarea>
-                    <input type="submit" value="Submit" class="sentemail">
-                </form>
+                    <br>
+                    <input type="submit" id="submission" value="Submit" class="sentemail">
             </div>
         </div>
-        <div class="box box3">
-            <div>
-                <br>
-                <h5>HISTORIC DATA</h5>
-                <br>
-                It's easy to google the weather right now
-                <br><br>
-                More complicated is finding LY <br> Was it different or similar?
-                <br><br><br>
-                Fluctuations this year vs LY <br> has a sizeable impact on sales
-                <br><br><br>
-                "CLICK HERE"
-                <br><br><br>
-            </div>
-        </div>
-    </div>
     
 <br>
+<hr>
 <div class="container fluid">
     <div class="row">
         <div class="col" id="hero-image-media" title="primark-dublin">
         </div> 
     </div>
 </div>
-</header>
+<hr>
 
-<br>
-
-<body>
-
-<br>
-<div class="text-center">
-Hello
-</div>
 <br>
 
 </body>
@@ -388,6 +358,6 @@ Hello
     </div>
 
     </footer>
-	    <script src="/js/email.js"></script>
-</html>
+    <script src="/js/email.js"></script>
 
+</html>
