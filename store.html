@@ -50,15 +50,15 @@
         <div class="wrapper">
           <article class="main">
             <div class="logo">
-              <a href="home.html"
+              <a href="index.html"
                 ><img src="assets/logo/primark-logo-3.PNG" alt="logo"
               /></a>
             </div>
           </article>
-          <aside class="aside aside-1"><a href="about.html">About</a></aside>
-          <aside class="aside aside-2"><a href="city.html">City</a></aside>
-          <aside class="aside aside-3"><a href="store.html">Store</a></aside>
-          <aside class="aside aside-4"><a href="media.html">Media</a></aside>
+                <aside class="aside aside-1"><a href="index.html">Home</a></aside>
+                <aside class="aside aside-2"><a href="city.html">City</a></aside>
+                <aside class="aside aside-3"><a href="store.html">Store</a></aside>
+                <aside class="aside aside-4"><a href="contact.html">Contact</a></aside>
         </div>
       </div>
     </body>
@@ -1609,4 +1609,43 @@
       defer
     ></script>
   </body>
+<div>
+    <footer class="footer">
+        <form>
+            <div class="row">
+                <div class="col"></div>
+                <div class="form-group col-md-3" id="call-to-action">
+                <form onsubmit="return sendMail(this);">
+                    <label for="emailaddress">Sign Up to Our Newsletter
+                    <input type="text" name="emailaddress" class="form-control text-center" required placeholder="name@example.com">
+                    </label>
+                    <br>
+                    <input type="submit" value="Send" class="btn btn-secondary center-block sentemail">
+		        </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+        <div class="container fluid">
+            <div class="wrapper">
+                <footer-aside class="top-footer-aside aside-1"><a href="index.html">Home</a></footer-aside>
+                <footer-aside class="top-footer-aside aside-2"><a href="city.html">City</a></footer-aside>
+                <footer-aside class="top-footer-aside aside-3"><a href="store.html">Store</a></footer-aside>
+                <footer-aside class="top-footer-aside aside-4"><a href="contact.html">Contact</a></footer-aside>
+            </div>
+        </div>
+        <div class="wrapper">
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/primark" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/primark" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/primark/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.pinterest.ca/primark/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+
+    <div class="wrapper">
+        <footer-aside class="btm-footer-aside aside-2"><div><a href="index.html" id="footerlogo"></a>© 2020</div></footer-aside>
+    </div>
+
+    </footer>
 </html>
