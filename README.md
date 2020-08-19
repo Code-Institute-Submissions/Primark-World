@@ -184,6 +184,8 @@ Same as above, where the rate of USD to GBP & EUR has a material impact on margi
 I would like to be able to give specific store data & images in info windows if this was to be upgraded and used by company
 -  **Google Maps API alternative views**<br>
 I wanted to be able to switch views (e.g. only stores by the coast or Top 20 stores)
+-  **jQuery functionality**<br>
+I managed to write some jQuery code that worked independently of the rest of the site. However, I had to delete it as I couldn't integrate jQuery effectively into my existing code. 
 
 ---
 

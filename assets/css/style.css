@@ -1,61 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Noto+Sans+JP:100,200,300,400,500,600,700');
 
-/*Home Pg--------------------------------------------Nav*/
-
-.menu-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    /*border: 3px solid #fff;*/
-}
-
-.menu-btn__burger {
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .5s ease-in-out;
-}
-
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .5s ease-in-out;
-}
-.menu-btn__burger::before {
-    transform: translateY(-16px);
-}
-.menu-btn__burger::after {
-    transform: translateY(16px);
-}
-/* ANIMATION */
-.menu-btn.open .menu-btn__burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-}
-
-
+/*Home Pg--------------------------------------------Alert*/
 
 .site-wide-alert {
     height:35px !important;
@@ -66,11 +11,6 @@
     font-family: "Roboto" !important;
     font-size: 90% !important;
 }
-
-/*Animated Burger/Menu Icon by Nicholas M. Smith https://www.hongkiat.com/blog/hamburger-menu-animations/*
-Try to add to home menu
-
-
 
 /*--------------------------------------------Aside Wrapper for menu items Code attribution css-tricks.com [(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)]*/
 
@@ -154,6 +94,8 @@ img {
      font-weight: 600;
  }  
 
+/*--------------------------------------------City-Containers for text boxes*/
+
 .city-container .box2 {
     background: #fff;  
 }
@@ -162,9 +104,6 @@ img {
     background: rgba(204,229,255);
 }
 
-/*--------------------------------------------Navbar https://azmind.com/demo/bootstrap-hamburger-menu/* /
-
-/*attribution shutterstock*/
 #hero-image {
     height: 35em;
     width: 100%;
@@ -217,6 +156,85 @@ form {
     font-size: 90%;
     font-weight: 500;
 }
+
+/*--------------------------------------------Important - check this out download*/
+.primarkworldinfo-pdf i:hover {
+     color:gold;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+}
+
+/*-------------------------------------------------------------Additional images*/
+#topglass {
+    height: 30em;
+    width: 100%;
+    background: url(../images/stores/topglass/primark-002.jpg);  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#madrid {
+    height: 30em;
+    width: 100%;
+    background: url(../images/alev-takil-e8k2llHEiE0-unsplash.jpg);  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#message {
+    background-color:  rgba(204,229,255);
+    color:black;
+}
+
+#important {
+    background-color: #fff;
+    color: rgba(80,152,192);
+    font-weight: 500;
+    font-size: 125%;
+    font-display: bold;
+}
+
+.fa-download {
+  color: rgba(80,152,192);
+}
+
+@media screen and (max-width: 767px) {
+  .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+    margin: 10px 0px 10px 0px
+  }
+}
+
+.container input {
+  width: 50%;
+  clear: both;
+}
+
+ select, input[type="text"]{
+      width:100%;
+      box-sizing:border-box;
+    }
+
+ select, input[type="country"]{
+      width:100%;
+      box-sizing:border-box;
+    }
+
+textarea { 
+        width:100%; 
+    } 
+
+#submission {
+  width:25%;
+  box-sizing:border-box;
+  }
 
 /*--------------------------------------------Top-Footer hyperlinks & social media*/
 
@@ -280,16 +298,8 @@ form {
     color: #fff;
 }
 
-.primarkworldinfo-pdf i:hover {
-     color:gold;
-     transition: all 0.35s ease-in-out;
-     -moz-transition: all 0.35s ease-in-out;
-     -webkit-transition: all 0.35s ease-in-out;
-     -o-transition: all 0.35s ease-in-out;
-}
 
-
-/*--------------------------------------------Btm-Footer copyright/logo/spotify*/
+/*--------------------------------------------Btm-Footer copyright/logo/*/
 
 #footerlogo {
     height: 2em;
@@ -374,15 +384,6 @@ iframe {
     height:30em;
 }
 
-/*About Pg--------------------------------------------*/
-#hero-image-about {
-    height: 30em;
-    width: 100%;
-    background: url(../images/mangopear-creative-BK90Fa7Ujps-unsplash.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: bottom;
-}
-
 /*CityWeather Pg--------------------------------------------*/
 #hero-image-city {
     height: 30em;
@@ -430,17 +431,7 @@ img {
   display: block;
 }
 
-
-/*Media Pg--------------------------------------------*/
-#hero-image-media {
-    height: 50em;
-    width: 100%;
-    background: url(../images/hosein-emrani-r_cZgqq0WHE-unsplash.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: bottom;
-}
-
-/*Store Locator Pg--------------------------------------------*/
+/*Store Pg--------------------------------------------*/
 #hero-image-store {
     height: 30em;
     width: 100%;
@@ -453,82 +444,11 @@ body {
     background: rgba(80,152,192);
 }
 
-/*Certification download--------------------------------------------*/
-.certication-pdf i:hover {
-     color:gold;
-     transition: all 0.35s ease-in-out;
-     -moz-transition: all 0.35s ease-in-out;
-     -webkit-transition: all 0.35s ease-in-out;
-     -o-transition: all 0.35s ease-in-out;
-}
-
-/*attribution unsplash junho-chak*/
-#topglass {
-    height: 30em;
+/*Contact Pg--------------------------------------------*/
+#hero-image-media {
+    height: 50em;
     width: 100%;
-    background: url(../images/stores/topglass/primark-002.jpg);  
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(../images/hosein-emrani-r_cZgqq0WHE-unsplash.jpg) no-repeat center center;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
-
-/*attribution unsplash edward-howell*/
-#madrid {
-    height: 30em;
-    width: 100%;
-    background: url(../images/alev-takil-e8k2llHEiE0-unsplash.jpg);  
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-#message {
-    background-color:  rgba(204,229,255);
-    color:black;
-}
-
-#important {
-    background-color: #fff;
-    color: rgba(80,152,192);
-    font-weight: 500;
-    font-size: 125%;
-    font-display: bold;
-}
-
-.fa-download {
-  color: rgba(80,152,192);
-}
-
-@media screen and (max-width: 767px) {
-  .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
-    margin: 10px 0px 10px 0px
-  }
-}
-
-.container input {
-  width: 50%;
-  clear: both;
-}
-
- select, input[type="text"]{
-      width:100%;
-      box-sizing:border-box;
-    }
-
- select, input[type="country"]{
-      width:100%;
-      box-sizing:border-box;
-    }
-
-textarea { 
-        width:100%; 
-    } 
-
-#submission {
-  width:25%;
-  box-sizing:border-box;
-  }
